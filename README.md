@@ -10,10 +10,18 @@
 **Making the script run in background**
 * we are using crontab to run script in background 
 * copy the contents to /bin
-    * ``` console user@machine:~$sudo cp -i /your/file/path/watch.py /bin ```
+    * ``` console
+        user@machine:~$ sudo cp -i /your/file/path/watch.py /bin 
+        ```
 * open crontab, select 1 to 4 if you haven't assigned any
     * ``` console
-        user@machine:~$sudo crontab -e
+        user@machine:~$ sudo crontab -e
         ```
 * Add the given  line to your crontab
-    * ``` console @reload sudo -u username python3 /bin/watch.py```
+    * ``` console 
+        @reload sudo -u username python3 /bin/watch.py
+        ```
+* Reboot the system
+    * ```console
+        user@machine:~$ reboot
+        ```
