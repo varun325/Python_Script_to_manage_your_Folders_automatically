@@ -6,7 +6,7 @@
 *Custom editing steps:*
 * *Change `python folder = "/Downloads` to `python folder = "/Yoour/file/path"` for your custom folder management*
 * *You can add extra conditions or modify the existing ones and change the folder names if you know your way around python  for. example:*
-    *```python
+    * ```python
 
         folder ="/Downloads"
         home = Path.home()
