@@ -1,6 +1,6 @@
 
 # Python Script to manage your folders automatically
-## _This Script can run in back ground add move files to differemt folders based upon file types_
+## _This Script can run in back ground and move files to different folders based upon file types_
 
 **In this example we have managed the download folder**
 
