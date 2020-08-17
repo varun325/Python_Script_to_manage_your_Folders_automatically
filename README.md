@@ -1,3 +1,5 @@
+// colors
+s {color:orange}
 # Python Script to manage your folders automatically
 ## _This Script can run in back ground add move files to differemt folders based upon file types_
 
@@ -33,8 +35,10 @@
         user@machine:~$ sudo crontab -e
         ```
 * [x] Add the given  line to your crontab
-    * <span style="color:orange">@reload</span><span style="color:green"> sudo -u username python3 /bin/watch.py</span>
+    * ``` bash 
+        @reload sudo -u username python3 /bin/watch.py
+        ```
 * [x] Reboot the system
     * ```bash
-        user@machine:~$ reboot
+        ~~*user@machine:~*~~$ reboot
         ```
