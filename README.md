@@ -23,7 +23,7 @@
         ```
 
 **Making the script run in background**
-* we are using crontab to run script in background 
+*we are using crontab to run script in background* 
 * [x] copy the contents to /bin
     * ``` bash
         user@machine:~$ sudo cp -i /your/file/path/watch.py /bin 
