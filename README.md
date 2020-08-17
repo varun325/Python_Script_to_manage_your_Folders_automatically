@@ -25,7 +25,7 @@
 **Making the script run in background**
 *we are using crontab to run script in background* 
 * [x] copy the contents to /bin
-    * ``` bash
+    * ``` sh
         user@machine:~$ sudo cp -i /your/file/path/watch.py /bin 
         ```
 * [x] open crontab, select 1 to 4 if you haven't assigned any
