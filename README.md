@@ -1,6 +1,6 @@
 
 # Python Script to manage your folders automatically
-## _This Script can run in back ground add move files to differemt folders based upon file types_
+## _This Script can run in back ground and move files to different folders based upon file types_
 
 **In this example we have managed the download folder**
 
@@ -23,7 +23,7 @@
                 shutil.move(path.join(src, f), path.join(book,f))
         ```
 
-## Making the script run in background
+## Making the script run in background(LINUX {UBUNTU})
 
 *we are using crontab to run script in background* 
 * [x] copy the contents to /bin
