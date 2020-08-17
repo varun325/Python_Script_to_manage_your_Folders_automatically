@@ -37,5 +37,5 @@
         @reload sudo -u username python3 /bin/watch.py
         ```
 * [x] Reboot the system
-       > [user@machine:~](#)$ reboot
+       >[user@machine:~](#)$ reboot
         
