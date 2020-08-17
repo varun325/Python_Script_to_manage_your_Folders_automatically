@@ -16,25 +16,27 @@
 
         book = str(home)+folder+"/Books"
 
-        if f.endswith(".epub") or f.endswith(".EPUB"):
-            shutil.move(path.join(src, f), path.join(book,f))
+        files = [i for i in os.listdir(src) if path.isfile(path.join(src, i))]
+        for f in files:
+            if f.endswith(".epub") or f.endswith(".EPUB"):
+                shutil.move(path.join(src, f), path.join(book,f))
         ```
 
 **Making the script run in background**
 * we are using crontab to run script in background 
-* copy the contents to /bin
+* [x] copy the contents to /bin
     * ``` bash
         user@machine:~$ sudo cp -i /your/file/path/watch.py /bin 
         ```
-* open crontab, select 1 to 4 if you haven't assigned any
+* [x] open crontab, select 1 to 4 if you haven't assigned any
     * ``` bash
         user@machine:~$ sudo crontab -e
         ```
-* Add the given  line to your crontab
+* [x] Add the given  line to your crontab
     * ``` bash 
         @reload sudo -u username python3 /bin/watch.py
         ```
-* Reboot the system
+* [x] Reboot the system
     * ```bash
         user@machine:~$ reboot
         ```
