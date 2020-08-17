@@ -36,7 +36,7 @@
         ```
 * [x] Add the given  line to your crontab
     * ``` bash 
-        @reload sudo -u username python3 /bin/watch.py
+        @reboot sudo -u username python3 /bin/watch.py
         ```
 * [x] Reboot the system
     * ```bash
