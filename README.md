@@ -1,5 +1,3 @@
-// colors
-s {color:orange}
 # Python Script to manage your folders automatically
 ## _This Script can run in back ground add move files to differemt folders based upon file types_
 
@@ -39,6 +37,5 @@ s {color:orange}
         @reload sudo -u username python3 /bin/watch.py
         ```
 * [x] Reboot the system
-    * ```bash
-        ~~*user@machine:~*~~$ reboot
-        ```
+       > [user@machine:~](#)$ reboot
+        
