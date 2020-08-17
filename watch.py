@@ -14,16 +14,16 @@ if not os.path.exists(str(home)+folder+"/Docs"):
     os.makedirs(str(home)+folder+"/Docs")
 if not os.path.exists(str(home)+folder+"/Pdfs"):
     os.makedirs(str(home)+folder+"/Pdfs")
-if not os.path.exists(str(home)+folder+"Images"):
-    os.makedirs(str(home)+folder+"Images")
+if not os.path.exists(str(home)+folder+"/Images"):
+    os.makedirs(str(home)+folder+"/Images")
 if not os.path.exists(str(home)+"/Desktop/Wallpapers"):
     os.makedirs(str(home)+"/Desktop/Wallpapers")
-if not os.path.exists(str(home)+folder+"Zips"):
-    os.makedirs(str(home)+folder+"Zips")
-if not os.path.exists(str(home)+folder+"Ppts"):
-    os.makedirs(str(home)+folder+"Ppts")
-if not os.path.exists(str(home)+folder+"Videos"):
-    os.makedirs(str(home)+folder+"Videos")
+if not os.path.exists(str(home)+folder+"/Zips"):
+    os.makedirs(str(home)+folder+"/Zips")
+if not os.path.exists(str(home)+folder+"/Ppts"):
+    os.makedirs(str(home)+folder+"/Ppts")
+if not os.path.exists(str(home)+folder+"/Videos"):
+    os.makedirs(str(home)+folder+"/Videos")
 if not os.path.exists(str(home)+folder+"/Music"):
     os.makedirs(str(home)+folder+"/Music")
 if not os.path.exists(str(home)+folder+"/Jupiter"):
@@ -81,7 +81,7 @@ def movement():
             shutil.move(path.join(src, f), path.join(pdf,f))
         elif f.endswith(".doc") or f.endswith(".docx") or f.endswith(".DOC") or f.endswith(".DOCX"):
             shutil.move(path.join(src, f), path.join(doc,f))
-        elif f.endswith(".zip") or f.endswith(".gz") or f.endswith(".xz") or f.endswith(".ZIP") or f.endswith(".GZ") or f.endswith(".XZ") or f.endswith(".deb") or f.endswith(".DEB") or f.endswith("bz2") or f.endswith(".BZ2"):
+        elif f.endswith(".zip") or f.endswith(".gz") or f.endswith(".7z") or f.endswith(".7Z") or f.endswith(".xz") or f.endswith(".ZIP") or f.endswith(".GZ") or f.endswith(".XZ") or f.endswith(".deb") or f.endswith(".DEB") or f.endswith("bz2") or f.endswith(".BZ2"):
             shutil.move(path.join(src, f), path.join(zips,f))
         elif f.endswith(".ppt") or f.endswith(".pptx") or f.endswith(".PPT") or f.endswith(".PPTX"):
             shutil.move(path.join(src, f), path.join(pptx,f))
@@ -98,7 +98,7 @@ def movement():
     
 class OnMyWatch: 
     # Set the directory on watch 
-    watchDirectory = "/home/lucifer/Downloads"
+    watchDirectory = str(home)+folder
   
     def __init__(self): 
         self.observer = Observer() 
@@ -127,11 +127,7 @@ class Handler(FileSystemEventHandler):
         elif event.event_type == 'created': 
             # Event is created, you can process it now 
             movement()
-            print("Watchdog received created event - % s." % event.src_path) 
-        elif event.event_type == 'modified': 
-            # Event is modified, you can process it now 
-            movement()
-            print("Watchdog received modified event - % s." % event.src_path)
+            print("Watchdog received created event - % s." % event.src_path)
         elif event.event_type == 'moved': 
             # Event is created, you can process it now 
             movement()
