@@ -50,4 +50,18 @@
     * ```bash
         user@machine:~$ reboot
         ```
+## Making the script run in background(Windows)
+
+*we are using pythonw.exe to run script in background* 
+* [x] copy the watchWin.pyw to C:\Users\current_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
+* [x] run ```%appdata``` if you can't find AppData in User directory
+* [x] open crontab, select 1 to 4 if you haven't assigned any
+    * ```bash
+         C:\Your\File\Path> python3 appRegistry.py
+         ```
+* [x] on startup windows will execute 
+     * ```bash
+          C:\Users\current_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup> pythonw.exe watchWin.pyw
+          ```
+* [x] Reboot the system
 >Happy Scripting :computer: :heart:
