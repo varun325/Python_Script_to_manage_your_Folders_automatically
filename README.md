@@ -55,8 +55,8 @@
 *we are using pythonw.exe to run script in background* 
 * [x] copy the watchWin.pyw to
      * ```bash
-     C:\Users\current_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
-    ```
+          C:\Users\current_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
+          ```
 * [x] run ```%appdata``` if you can't find AppData in User directory
 * [x] open crontab, select 1 to 4 if you haven't assigned any
     * ```bash
