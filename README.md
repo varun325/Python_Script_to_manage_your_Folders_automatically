@@ -62,7 +62,7 @@
     * ```bash
          C:\Your\File\Path> python3 appRegistry.py
          ```
-* [] on startup windows will execute (Windows does this automatically, it's here just for explanation)
+* [ ] on startup windows will execute (Windows does this automatically, it's here just for explanation)
      * ```bash
           C:\Users\current_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup> pythonw.exe watchWin.pyw
           ```
