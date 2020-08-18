@@ -19,7 +19,7 @@
         home = Path.home()
         
         #Replace "/Books" with the destination folder
-        #You can also replace books with a different vatiable name
+        #You can also replace books with a different variable name
         if not os.path.exists(str(home)+folder+"/Books"):
             os.makedirs(str(home)+folder+"/Books")
 
@@ -50,3 +50,4 @@
     * ```bash
         user@machine:~$ reboot
         ```
+>Happy Scripting :computer: :heart:
