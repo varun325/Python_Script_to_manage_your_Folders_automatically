@@ -9,19 +9,22 @@
      #change
      folder = "/Downloads"
      #to
-     folder = "/Your/file/path"
+     folder = "/Your/folder"
      ```
 * *You can add extra conditions or modify the existing ones and change the folder names if you know your way around python  for. example:*
     * ```python
 
         folder ="/Downloads"
+        #folder ="/Your/folder"
         home = Path.home()
-
+        
+        #Replace "/Books" with the destination folder
+        #You can also replace books with a different vatiable name
         if not os.path.exists(str(home)+folder+"/Books"):
             os.makedirs(str(home)+folder+"/Books")
 
         book = str(home)+folder+"/Books"
-
+        #instead of ".epub", you can mention other formats as well
         files = [i for i in os.listdir(src) if path.isfile(path.join(src, i))]
         for f in files:
             if f.endswith(".epub") or f.endswith(".EPUB"):
