@@ -5,11 +5,12 @@
 **In this example we have managed the download folder**
 
 *Custom editing steps:*
-* *Change ```python 
-            folder = "/Downloads
-              ``` to ```python 
-                      folder = "/Your/file/path"
-                     ``` for your custom folder management*
+* ```python
+     #change
+     folder = "/Downloads"
+     #to
+     folder = "/Your/file/path"
+     ```
 * *You can add extra conditions or modify the existing ones and change the folder names if you know your way around python  for. example:*
     * ```python
 
