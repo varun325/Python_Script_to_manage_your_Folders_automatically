@@ -58,7 +58,7 @@
           C:\Users\current_user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\
           ```
 * [x] run ```%appdata``` if you can't find AppData in User directory
-* [x] open crontab, select 1 to 4 if you haven't assigned any
+* [x] add file to the windows registry folder by running the appRegistry.py script
     * ```bash
          C:\Your\File\Path> python3 appRegistry.py
          ```
